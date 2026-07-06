@@ -6,11 +6,25 @@ import { SOUTH_AFRICA_PATH, SOUTH_AFRICA_VIEWBOX } from "@/lib/south-africa-outl
 
 // A real South Africa outline (see lib/south-africa-outline.ts for the
 // data source and projection notes), with markers positioned using actual
-// city coordinates projected onto the same map — not a stylised diagram.
-// Click (or tap) a location to see engagement details; works identically
-// on desktop and touch.
+// city coordinates projected onto the same map.
+//
+// IMPORTANT: the path, connection lines, AND markers all live inside the
+// SAME <svg> element, using the same 0–1000 coordinate space. Location
+// data stores x/y as percentages (0–100) for readability, converted to
+// SVG units (×10) here. This is deliberate: an earlier version positioned
+// markers as separate HTML elements using CSS percentages against the
+// outer container, which broke as soon as the container's aspect ratio
+// didn't match the SVG's square viewBox (the map gets letterboxed inside
+// a non-square box, so a "60%" CSS position and a "60%" SVG position land
+// in different places). Keeping everything in one coordinate space inside
+// one SVG makes this impossible to get out of sync again.
 
-const HQ = { x: 68.65, y: 26.78 }; // Johannesburg/Sandton, the anchor point — same projection as every other marker
+const HQ = { x: 68.65, y: 26.78 }; // Johannesburg/Sandton, the anchor point
+const VB_SIZE = 1000; // matches SOUTH_AFRICA_VIEWBOX "0 0 1000 1000"
+
+function toSvg(pct: number): number {
+  return (pct / 100) * VB_SIZE;
+}
 
 export default function RegionalFootprintMap() {
   const [activeId, setActiveId] = useState<string>(locations[0].id);
@@ -19,7 +33,7 @@ export default function RegionalFootprintMap() {
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.3fr_1fr]">
       <div className="relative aspect-[4/3] overflow-hidden border border-border-dark bg-bg-secondary sm:aspect-[16/10]">
-        <svg viewBox={SOUTH_AFRICA_VIEWBOX} className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <svg viewBox={SOUTH_AFRICA_VIEWBOX} className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid meet">
           <path
             d={SOUTH_AFRICA_PATH}
             fill="var(--accent-navy)"
@@ -34,51 +48,62 @@ export default function RegionalFootprintMap() {
           {locations.map((loc) => (
             <line
               key={loc.id}
-              x1={(HQ.x / 100) * 1000}
-              y1={(HQ.y / 100) * 1000}
-              x2={(loc.x / 100) * 1000}
-              y2={(loc.y / 100) * 1000}
+              x1={toSvg(HQ.x)}
+              y1={toSvg(HQ.y)}
+              x2={toSvg(loc.x)}
+              y2={toSvg(loc.y)}
               stroke={loc.id === activeId ? "var(--accent-red-bright)" : "var(--accent-navy-bright)"}
               strokeWidth={loc.id === activeId ? 2.2 : 1.1}
               opacity={loc.id === activeId ? 0.9 : 0.35}
             />
           ))}
-        </svg>
 
-        {/* HQ marker */}
-        <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${HQ.x}%`, top: `${HQ.y}%` }}>
-          <span className="block h-2.5 w-2.5 rounded-full bg-accent-gold ring-4 ring-accent-gold/20" />
-        </div>
+          {/* HQ marker */}
+          <circle cx={toSvg(HQ.x)} cy={toSvg(HQ.y)} r="9" fill="var(--accent-gold)" opacity="0.25" />
+          <circle cx={toSvg(HQ.x)} cy={toSvg(HQ.y)} r="5" fill="var(--accent-gold)" />
 
-        {/* Location markers */}
-        {locations.map((loc) => {
-          const isActive = loc.id === activeId;
-          return (
-            <button
-              key={loc.id}
-              onClick={() => setActiveId(loc.id)}
-              className="group absolute -translate-x-1/2 -translate-y-1/2 outline-none"
-              style={{ left: `${loc.x}%`, top: `${loc.y}%` }}
-              aria-pressed={isActive}
-              aria-label={`${loc.name} — ${loc.engagements.length} engagement${loc.engagements.length > 1 ? "s" : ""}`}
-            >
-              <span
-                className={`block rounded-full transition-all ${
-                  isActive
-                    ? "h-3.5 w-3.5 bg-accent-red-bright ring-4 ring-accent-red/25"
-                    : "h-2 w-2 bg-accent-navy-bright ring-2 ring-accent-navy/20 group-hover:h-2.5 group-hover:w-2.5"
-                }`}
-              />
-              <span
-                className={`pointer-events-none absolute left-1/2 top-full mt-1.5 -translate-x-1/2 whitespace-nowrap font-mono text-[10px] uppercase tracking-wide transition-opacity ${
-                  isActive ? "text-ink-primary opacity-100" : "text-ink-faint opacity-0 group-hover:opacity-100"
-                }`}
+          {/* Location markers — real <circle>/<text>, same coordinate space as the path above */}
+          {locations.map((loc) => {
+            const isActive = loc.id === activeId;
+            const cx = toSvg(loc.x);
+            const cy = toSvg(loc.y);
+            return (
+              <g
+                key={loc.id}
+                onClick={() => setActiveId(loc.id)}
+                style={{ cursor: "pointer" }}
+                role="button"
+                tabIndex={0}
+                aria-pressed={isActive}
+                aria-label={`${loc.name} — ${loc.engagements.length} engagement${loc.engagements.length > 1 ? "s" : ""}`}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") setActiveId(loc.id);
+                }}
               >
-                {loc.name}
-              </span>
-            </button>
-          );
-        })}
+                {/* Invisible larger hit area so small markers stay easy to tap on mobile */}
+                <circle cx={cx} cy={cy} r="16" fill="transparent" />
+                {isActive && <circle cx={cx} cy={cy} r="12" fill="var(--accent-red)" opacity="0.25" />}
+                <circle
+                  cx={cx}
+                  cy={cy}
+                  r={isActive ? 7 : 4.5}
+                  fill={isActive ? "var(--accent-red-bright)" : "var(--accent-navy-bright)"}
+                  className="transition-all"
+                />
+                <text
+                  x={cx}
+                  y={cy + 18}
+                  textAnchor="middle"
+                  className={`pointer-events-none select-none font-mono uppercase tracking-wide transition-opacity ${isActive ? "opacity-100" : "opacity-0"}`}
+                  fontSize="13"
+                  fill="var(--ink-primary)"
+                >
+                  {loc.name}
+                </text>
+              </g>
+            );
+          })}
+        </svg>
       </div>
 
       {/* Detail panel */}
