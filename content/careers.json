@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "penetration-tester",
+    "title": "Penetration Tester",
+    "department": "Cybersecurity",
+    "contractType": "Full-time",
+    "address": "Sandton, South Africa",
+    "specs": [
+      "Conduct vulnerability assessments and penetration tests across client environments",
+      "Produce clear, actionable findings reports",
+      "OSCP or equivalent certification advantageous",
+      "Experience with common testing tools and methodologies"
+    ],
+    "summary": "Conduct vulnerability assessments and penetration tests across client environments.",
+    "closingDate": ""
+  },
+  {
+    "slug": "it-technician",
+    "title": "IT Technician",
+    "department": "IT Operations",
+    "contractType": "Full-time",
+    "address": "Sandton, South Africa",
+    "specs": [
+      "Provide first- and second-line helpdesk support",
+      "Maintain and troubleshoot client infrastructure",
+      "Relevant IT support experience or qualification"
+    ],
+    "summary": "Provide infrastructure and helpdesk support across managed IT client environments.",
+    "closingDate": ""
+  }
+]

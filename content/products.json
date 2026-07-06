@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "microsoft",
+    "name": "Microsoft",
+    "products": [
+      {
+        "name": "Microsoft 365 Security",
+        "category": "Email Security",
+        "description": "Email and collaboration security for Microsoft 365 environments.",
+        "id": "0a8b07b5"
+      },
+      {
+        "name": "Microsoft Azure",
+        "category": "Cloud",
+        "description": "Cloud infrastructure and platform services.",
+        "id": "e854cb66"
+      },
+      {
+        "name": "Microsoft Entra ID",
+        "category": "Identity",
+        "description": "Identity and access management for hybrid and cloud environments.",
+        "id": "a966f019"
+      }
+    ]
+  },
+  {
+    "slug": "aws",
+    "name": "AWS",
+    "products": [
+      {
+        "name": "AWS Cloud Infrastructure",
+        "category": "Cloud",
+        "description": "Public cloud hosting, compute, and storage services.",
+        "id": "0bc40327"
+      },
+      {
+        "name": "AWS Security Services",
+        "category": "Cloud",
+        "description": "Cloud-native security tooling for AWS workloads.",
+        "id": "36698f79"
+      }
+    ]
+  },
+  {
+    "slug": "fortinet",
+    "name": "Fortinet",
+    "products": [
+      {
+        "name": "FortiGate Firewalls",
+        "category": "Network Security",
+        "description": "Firewall appliances for network perimeter security.",
+        "id": "6b2f0d00"
+      },
+      {
+        "name": "Fortinet SD-WAN",
+        "category": "Network Security",
+        "description": "Secure software-defined wide area networking.",
+        "id": "a332dd66"
+      }
+    ]
+  },
+  {
+    "slug": "kaspersky",
+    "name": "Kaspersky",
+    "products": [
+      {
+        "name": "Kaspersky Endpoint Security",
+        "category": "Endpoint Security",
+        "description": "Endpoint protection against malware and advanced threats.",
+        "id": "67ef15f3"
+      }
+    ]
+  },
+  {
+    "slug": "trend-micro",
+    "name": "Trend Micro",
+    "products": [
+      {
+        "name": "Trend Micro Endpoint Protection",
+        "category": "Endpoint Security",
+        "description": "Endpoint detection and response for workstations and servers.",
+        "id": "9288f1f9"
+      }
+    ]
+  },
+  {
+    "slug": "eset",
+    "name": "ESET",
+    "products": [
+      {
+        "name": "ESET Endpoint Protection",
+        "category": "Endpoint Security",
+        "description": "Lightweight endpoint security for business environments.",
+        "id": "1986c850"
+      }
+    ]
+  },
+  {
+    "slug": "mimecast",
+    "name": "Mimecast",
+    "products": [
+      {
+        "name": "Mimecast Email Security",
+        "category": "Email Security",
+        "description": "Email security, continuity, and archiving.",
+        "id": "5d1cc26b"
+      }
+    ]
+  },
+  {
+    "slug": "checkpoint",
+    "name": "CheckPoint",
+    "products": [
+      {
+        "name": "CheckPoint Firewalls",
+        "category": "Network Security",
+        "description": "Enterprise firewall and threat prevention appliances.",
+        "id": "22b3d255"
+      }
+    ]
+  },
+  {
+    "slug": "sophos",
+    "name": "Sophos",
+    "products": [
+      {
+        "name": "Sophos Firewall",
+        "category": "Network Security",
+        "description": "Network firewall with integrated threat protection.",
+        "id": "0cd334e8"
+      },
+      {
+        "name": "Sophos Endpoint",
+        "category": "Endpoint Security",
+        "description": "Endpoint protection with managed detection and response.",
+        "id": "cc3b422f"
+      }
+    ]
+  },
+  {
+    "slug": "rapid7",
+    "name": "Rapid7",
+    "products": [
+      {
+        "name": "Rapid7 InsightVM",
+        "category": "Vulnerability Management",
+        "description": "Vulnerability scanning and risk prioritisation.",
+        "id": "0ad3c0fc"
+      }
+    ]
+  },
+  {
+    "slug": "nessus",
+    "name": "Nessus",
+    "products": [
+      {
+        "name": "Nessus Vulnerability Scanner",
+        "category": "Vulnerability Management",
+        "description": "Vulnerability assessment and scanning platform.",
+        "id": "191b7f1c"
+      }
+    ]
+  },
+  {
+    "slug": "qualys",
+    "name": "Qualys",
+    "products": [
+      {
+        "name": "Qualys VMDR",
+        "category": "Vulnerability Management",
+        "description": "Vulnerability management, detection, and response.",
+        "id": "fb132ad6"
+      }
+    ]
+  },
+  {
+    "slug": "dell",
+    "name": "Dell",
+    "products": [
+      {
+        "name": "Dell Server Hardware",
+        "category": "Hardware",
+        "description": "Enterprise server infrastructure.",
+        "id": "639f6d38"
+      }
+    ]
+  },
+  {
+    "slug": "pinnacle",
+    "name": "Pinnacle",
+    "products": [
+      {
+        "name": "Pinnacle Distribution Catalogue",
+        "category": "Distribution",
+        "description": "Distributed hardware and software solutions via Pinnacle.",
+        "id": "2fb9e472"
+      }
+    ]
+  }
+]

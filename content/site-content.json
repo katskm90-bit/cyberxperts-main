@@ -1,0 +1,207 @@
+{
+  "nav": {
+    "links": [
+      {
+        "id": "home",
+        "type": "link",
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "id": "about",
+        "type": "link",
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "id": "pre-assessment",
+        "type": "link",
+        "label": "Free Pre-Assessment",
+        "href": "/security-pre-assessment"
+      },
+      {
+        "id": "services",
+        "type": "dropdown",
+        "label": "Services",
+        "dropdownSource": "services"
+      },
+      {
+        "id": "industries",
+        "type": "dropdown",
+        "label": "Industries",
+        "dropdownSource": "industries"
+      },
+      {
+        "id": "products",
+        "type": "link",
+        "label": "Products",
+        "href": "/products"
+      },
+      {
+        "id": "resources",
+        "type": "link",
+        "label": "Resources",
+        "href": "/resources"
+      },
+      {
+        "id": "careers",
+        "type": "link",
+        "label": "Join Cyberxperts Team",
+        "href": "/careers"
+      },
+      {
+        "id": "contact",
+        "type": "link",
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Trusted Cyber Security Partner for Business and Enterprise",
+    "headlineLine1": "Security decisions",
+    "headlineLine2": "backed by evidence.",
+    "supportingText": "From continuous monitoring to risk assessments and incident response, Cyberxperts provides practical security services that help organisations understand their exposure and improve their security posture.",
+    "primaryButtonText": "Book a Consultation",
+    "primaryButtonHref": "/contact#consultation",
+    "secondaryButtonText": "Run a Free Security Self-Assessment",
+    "secondaryButtonHref": "/security-pre-assessment"
+  },
+  "trustStrip": [
+    {
+      "title": "Free Security Pre-Assessment",
+      "desc": "Understand your security posture in minutes",
+      "href": "/security-pre-assessment"
+    },
+    {
+      "title": "ISO 27001 Certified",
+      "desc": "Information Security Management",
+      "href": ""
+    },
+    {
+      "title": "24/7 Security Monitoring",
+      "desc": "Continuous visibility and response",
+      "href": ""
+    },
+    {
+      "title": "Enterprise and Regulated Industries",
+      "desc": "Supporting organisations across Africa",
+      "href": ""
+    }
+  ],
+  "stats": {
+    "eyebrow": "By The Numbers",
+    "heading": "Minimise the threats.",
+    "items": [
+      {
+        "value": 50,
+        "label": "Projects Completed"
+      },
+      {
+        "value": 40,
+        "label": "Happy Clients"
+      },
+      {
+        "value": 15,
+        "label": "Consultants"
+      },
+      {
+        "value": 20,
+        "label": "Partners"
+      }
+    ]
+  },
+  "footer": {
+    "locationText": "Operating across the SADC region",
+    "tagline": "Cyber security and IT services for businesses across South Africa and the SADC region.",
+    "badges": [
+      "ISO 27001",
+      "ISO 9001",
+      "POPIA Compliant",
+      "Level 1 B-BBEE"
+    ],
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "name": "Twitter/X",
+        "href": "#"
+      },
+      {
+        "name": "WhatsApp",
+        "href": "#"
+      }
+    ],
+    "copyrightText": "© {year} Cyberxperts. All rights reserved. | Website by Soluxionz Drip (Pty) Ltd"
+  },
+  "company": {
+    "addressLine1": "Honeywood Office Park",
+    "addressLine2": "2 Humber Street, Woodmead",
+    "addressLine3": "Sandton, 2191",
+    "phoneDisplay": "011 568 6725",
+    "phoneHref": "+27115686725",
+    "email": "info@cyberxperts.co.za",
+    "whatsappNumber": "27115686725",
+    "whatsappMessage": "Hello, I'd like to find out more about Cyberxperts' services.",
+    "emergencyPhoneHref": "+27000000000",
+    "emergencyWhatsappNumber": "27000000000"
+  },
+  "branding": {
+    "logoPath": "/images/cyberxperts-logo.png",
+    "faviconPath32": "/favicon-32.png",
+    "faviconPath192": "/favicon-192.png",
+    "faviconPath180": "/favicon-180.png"
+  },
+  "pages": {
+    "products": {
+      "eyebrow": "Products",
+      "headline": "Solutions from the partners we trust.",
+      "description": "Cyberxperts implements and supports security and IT products from established vendors. Browse by partner or filter by category."
+    },
+    "resources": {
+      "eyebrow": "Resources",
+      "headline": "Threat updates, partner news, and industry trends.",
+      "description": "Practical, ongoing updates to help you stay informed about emerging threats, new tools, and developments that matter to your organisation's security posture.",
+      "categories": [
+        {
+          "title": "Threat Advisories",
+          "desc": "Updates on emerging vulnerabilities, active exploitation campaigns, and sector-specific threats relevant to South African and SADC organisations."
+        },
+        {
+          "title": "Partner & Product Updates",
+          "desc": "New releases, major updates, and capability changes from our technology partners, including Microsoft, Fortinet, Mimecast, and others."
+        },
+        {
+          "title": "Industry Trends",
+          "desc": "Developments in regulation, compliance frameworks, and the broader cyber security landscape that may affect how your organisation manages risk."
+        }
+      ]
+    },
+    "careers": {
+      "eyebrow": "Careers",
+      "headline": "Build your career with us.",
+      "description": "We're always looking for capable people to join our cyber security and IT teams. Browse open roles below."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "headline": "Speak with a security professional.",
+      "description": "Book a consultation, request an assessment, or get in touch directly. We respond to every enquiry personally.",
+      "faqs": [
+        {
+          "q": "How quickly can you respond to a security incident?",
+          "a": "Contact us directly by phone for time-sensitive incidents. Our team will assess and respond based on the nature and severity of the situation."
+        },
+        {
+          "q": "Do you work with organisations outside South Africa?",
+          "a": "Yes. We operate across the SADC region and have delivered engagements in multiple countries."
+        },
+        {
+          "q": "Can you support both a one-off assessment and ongoing managed services?",
+          "a": "Yes, both engagement models are available, depending on your requirements."
+        }
+      ]
+    }
+  }
+}

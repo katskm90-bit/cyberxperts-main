@@ -1,0 +1,378 @@
+[
+  {
+    "slug": "managed-security-services",
+    "image": "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Managed Security Services",
+    "summary": "Ongoing, day-to-day management of your security environment, so threats are monitored and addressed without requiring an in-house team.",
+    "overview": "Managed Security Services gives your organisation continuous oversight of its security posture without the cost of building an internal team from scratch. Cyberxperts manages your network, endpoint, and email security solutions on an ongoing basis, working with established platforms including Fortigate, Sophos, CheckPoint, Mimecast, and Microsoft 365 Security.",
+    "problems": [
+      "No dedicated internal capacity to monitor security tools daily",
+      "Security solutions purchased but not actively managed or tuned",
+      "Limited visibility into what is actually happening across the network",
+      "Inconsistent patching, configuration, and policy enforcement"
+    ],
+    "benefits": [
+      "Continuous management of existing security infrastructure",
+      "Access to a team with experience across regulator, financial services, and public sector environments",
+      "Reduced burden on internal IT staff",
+      "Clear reporting on the state of your security environment"
+    ],
+    "process": [
+      {
+        "title": "Environment review",
+        "description": "We assess your current security tools, configuration, and coverage gaps."
+      },
+      {
+        "title": "Onboarding",
+        "description": "Your environment is brought under active management, with baselines and policies established."
+      },
+      {
+        "title": "Ongoing management",
+        "description": "Day-to-day monitoring, tuning, and maintenance of your security tools."
+      },
+      {
+        "title": "Reporting",
+        "description": "Regular reporting on security posture, incidents, and recommended actions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do we need to replace our existing security tools?",
+        "answer": "Not necessarily. We work with widely used platforms including Fortigate, Sophos, CheckPoint, Mimecast, and Microsoft 365 Security, and can manage tools you already have in place."
+      },
+      {
+        "question": "Is this a replacement for an internal IT team?",
+        "answer": "It is designed to extend your existing capacity, particularly where dedicated security monitoring is not realistic to build in-house."
+      }
+    ]
+  },
+  {
+    "slug": "security-operations-centre",
+    "image": "https://images.pexels.com/photos/17323801/pexels-photo-17323801.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Security Operations Centre",
+    "summary": "24/7 monitoring, detection, and response, giving your organisation continuous visibility into security events.",
+    "overview": "Cyberxperts' Security Operations Centre service provides continuous monitoring of your environment, identifying and responding to security events as they happen. Our SOC services have been deployed and supported across organisations including PanSALB, Mzimkhulu Holdings, Durban Municipality, Seratype, and Grupo Cobra.",
+    "problems": [
+      "No round-the-clock monitoring of security events",
+      "Delayed detection of suspicious or malicious activity",
+      "Alert volumes too high for internal teams to triage effectively",
+      "No formal threat monitoring or threat intelligence capability"
+    ],
+    "benefits": [
+      "Continuous monitoring across your environment",
+      "Faster identification and response to security events",
+      "Reduced noise through proper alert triage",
+      "A track record of SOC deployment across regulator and public sector environments"
+    ],
+    "process": [
+      {
+        "title": "Deployment scoping",
+        "description": "We assess what needs to be monitored and how data sources will be integrated."
+      },
+      {
+        "title": "SOC deployment",
+        "description": "Monitoring infrastructure is deployed and configured against your environment."
+      },
+      {
+        "title": "Live monitoring",
+        "description": "Continuous monitoring, detection, and triage of security events."
+      },
+      {
+        "title": "Response and reporting",
+        "description": "Confirmed incidents are escalated and addressed, with regular reporting provided."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is this delivered on-site or remotely?",
+        "answer": "SOC services are delivered remotely, with monitoring infrastructure integrated into your environment."
+      },
+      {
+        "question": "What happens when a real incident is detected?",
+        "answer": "Confirmed incidents are escalated immediately, with our team supporting triage and, where required, formal incident response."
+      }
+    ]
+  },
+  {
+    "slug": "risk-assessments",
+    "image": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Risk Assessments",
+    "summary": "Structured evaluation of your security posture against recognised frameworks including NIST, ISO 27001, and COBIT.",
+    "overview": "Cyberxperts performs risk and maturity assessments structured against international frameworks, including NIST, ISO 27001, and COBIT. This work has included assessments for the National Nuclear Regulator, Transnet, GEMS Service Provider Network, and multiple South African municipalities.",
+    "problems": [
+      "Uncertainty about current security maturity relative to recognised standards",
+      "No structured basis for prioritising security investment",
+      "Compliance obligations without a clear gap analysis",
+      "Previous assessments that lacked a defined framework"
+    ],
+    "benefits": [
+      "A clear, framework-based view of your current security maturity",
+      "Defined gaps and prioritised recommendations",
+      "Assessment methodology grounded in NIST, ISO 27001, and COBIT",
+      "Experience assessing regulator, financial services, and municipal environments"
+    ],
+    "process": [
+      {
+        "title": "Scoping",
+        "description": "We define the assessment scope, framework, and systems in scope."
+      },
+      {
+        "title": "Assessment",
+        "description": "Evidence gathering against the chosen framework, including documentation review and technical evaluation."
+      },
+      {
+        "title": "Gap analysis",
+        "description": "Findings are mapped against the framework to identify maturity gaps."
+      },
+      {
+        "title": "Reporting",
+        "description": "A structured report with prioritised, actionable recommendations."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which frameworks do you assess against?",
+        "answer": "Primarily NIST, ISO 27001, and COBIT, selected based on your regulatory context and objectives."
+      },
+      {
+        "question": "How long does an assessment take?",
+        "answer": "This depends on scope. Past engagements have ranged from a few weeks to several months for larger, multi-entity assessments."
+      }
+    ]
+  },
+  {
+    "slug": "penetration-testing",
+    "image": "https://images.pexels.com/photos/5483240/pexels-photo-5483240.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Penetration Testing",
+    "summary": "Controlled testing of your network, applications, and infrastructure to identify exploitable weaknesses before attackers do.",
+    "overview": "Cyberxperts performs vulnerability assessments and penetration testing across networks, web applications, mobile applications, APIs, and cloud environments. Recent engagements include network security and penetration testing for Egoli Gas, Reatile, CNG Group, the National Nuclear Regulator, and PanSALB.",
+    "problems": [
+      "Unverified assumptions about network or application security",
+      "No recent independent testing of externally facing systems",
+      "Uncertainty about exposure following infrastructure or application changes",
+      "Compliance or client requirements for independent security testing"
+    ],
+    "benefits": [
+      "Independent, evidence-based identification of exploitable vulnerabilities",
+      "Clear, prioritised remediation guidance",
+      "Testing experience across regulator and private sector environments",
+      "Coverage across network, web, mobile, API, and cloud environments"
+    ],
+    "process": [
+      {
+        "title": "Scoping",
+        "description": "We define systems in scope, testing type, and rules of engagement."
+      },
+      {
+        "title": "Testing",
+        "description": "Controlled testing is performed using a combination of commercial and open-source tooling."
+      },
+      {
+        "title": "Validation",
+        "description": "Findings are validated to confirm exploitability and impact."
+      },
+      {
+        "title": "Reporting",
+        "description": "A detailed report covering findings, risk ratings, and remediation guidance."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Will testing disrupt our live systems?",
+        "answer": "Testing is scoped and conducted in a controlled manner, with rules of engagement agreed in advance to manage risk to live systems."
+      },
+      {
+        "question": "Do you test cloud environments?",
+        "answer": "Yes, including AWS and Microsoft Azure cloud security assessments alongside network and application testing."
+      }
+    ]
+  },
+  {
+    "slug": "compliance-services",
+    "image": "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Compliance Services",
+    "summary": "Practical support for POPIA, ISO 27001, and other regulatory and governance obligations.",
+    "overview": "Cyberxperts supports organisations in meeting governance, risk, and compliance obligations, including POPIA alignment and ISO 27001 implementation and certification support. This has included a POPIA-aligned data security assessment for the Companies and Intellectual Property Commission, and ISO 27001 ISMS implementation and certification support for Gijima.",
+    "problems": [
+      "Uncertainty about POPIA compliance obligations and current exposure",
+      "ISO 27001 certification goals without a clear implementation path",
+      "Governance and policy documentation that has not kept pace with the organisation",
+      "Audit findings that have not been formally addressed"
+    ],
+    "benefits": [
+      "Practical, evidence-based compliance support rather than generic checklists",
+      "Experience supporting ISO 27001 certification from implementation through to audit",
+      "POPIA-specific assessment experience, including work with government entities",
+      "Clear documentation suitable for audit and regulatory review"
+    ],
+    "process": [
+      {
+        "title": "Gap assessment",
+        "description": "Current state is assessed against the relevant compliance requirement."
+      },
+      {
+        "title": "Remediation planning",
+        "description": "A prioritised plan is developed to close identified gaps."
+      },
+      {
+        "title": "Implementation support",
+        "description": "We support implementation of required controls, policies, and documentation."
+      },
+      {
+        "title": "Certification or audit support",
+        "description": "Support through to certification or formal audit, where applicable."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you support us through to ISO 27001 certification?",
+        "answer": "Yes, including ISMS implementation and support through to certification, as delivered for Gijima."
+      },
+      {
+        "question": "Do you work with government entities on POPIA?",
+        "answer": "Yes, including a POPIA-aligned data security assessment for the Companies and Intellectual Property Commission."
+      }
+    ]
+  },
+  {
+    "slug": "security-awareness-training",
+    "image": "https://images.pexels.com/photos/8197545/pexels-photo-8197545.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Security Awareness Training",
+    "summary": "Practical training that reduces the human-factor risk behind most security incidents.",
+    "overview": "Cyberxperts provides cyber security awareness training for organisations, alongside training for individuals working toward certifications including CISA, CISM, COBIT, ISO 27001, CISSP, CEH, OSCP, and LPT.",
+    "problems": [
+      "Staff unaware of common attack methods such as phishing",
+      "No formal, recurring security awareness programme in place",
+      "Technical controls undermined by avoidable human error",
+      "Compliance requirements for documented staff training"
+    ],
+    "benefits": [
+      "Reduced exposure to common social engineering and phishing attacks",
+      "Training tailored to organisational context rather than generic content",
+      "Support for both general staff awareness and formal certification preparation",
+      "Documented training suitable for compliance and audit purposes"
+    ],
+    "process": [
+      {
+        "title": "Needs assessment",
+        "description": "We assess current awareness levels and organisational risk areas."
+      },
+      {
+        "title": "Programme design",
+        "description": "Training content is structured around your organisation's actual risk profile."
+      },
+      {
+        "title": "Delivery",
+        "description": "Training is delivered to staff, with materials suited to a non-technical audience."
+      },
+      {
+        "title": "Reinforcement",
+        "description": "Recommendations for ongoing reinforcement and periodic refresher training."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is this only for general staff, or also technical teams?",
+        "answer": "Both. We provide general security awareness training as well as support for individuals preparing for technical security certifications."
+      },
+      {
+        "question": "How often should awareness training be repeated?",
+        "answer": "We recommend periodic refresher training, given that awareness naturally decays over time without reinforcement."
+      }
+    ]
+  },
+  {
+    "slug": "incident-response",
+    "image": "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Incident Response",
+    "summary": "Structured digital forensics and breach investigation when something has gone wrong.",
+    "overview": "Cyberxperts provides cybersecurity incident response services, including digital forensics and data breach investigations conducted in line with applicable legislation. This has included a digital forensics and cybersecurity assessment engagement for Grupo Cobra.",
+    "problems": [
+      "A suspected or confirmed security incident with no clear response process",
+      "Uncertainty about the scope and impact of a breach",
+      "Need for forensic evidence suitable for legal or regulatory purposes",
+      "No internal capability to investigate incidents independently"
+    ],
+    "benefits": [
+      "Structured investigation conducted in line with applicable legislation",
+      "Clear identification of incident scope and root cause",
+      "Evidence handling suitable for legal or regulatory follow-up",
+      "Experience conducting digital forensics investigations for real clients"
+    ],
+    "process": [
+      {
+        "title": "Containment",
+        "description": "Immediate steps to contain the incident and prevent further impact."
+      },
+      {
+        "title": "Investigation",
+        "description": "Forensic investigation to determine scope, cause, and impact."
+      },
+      {
+        "title": "Evidence handling",
+        "description": "Evidence is preserved and documented in line with applicable legislation."
+      },
+      {
+        "title": "Reporting and remediation",
+        "description": "Findings are reported, with recommendations to prevent recurrence."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "We think we may have had a breach but are not certain. What should we do?",
+        "answer": "Contact us directly. Early containment and investigation significantly improve the outcome of an incident response engagement."
+      },
+      {
+        "question": "Is the investigation suitable for legal or regulatory proceedings?",
+        "answer": "Digital forensics work is conducted in line with applicable legislation, with evidence handling appropriate for that purpose."
+      }
+    ]
+  },
+  {
+    "slug": "consulting",
+    "image": "https://images.pexels.com/photos/1181304/pexels-photo-1181304.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "name": "Consulting",
+    "summary": "Strategic guidance on security programs, governance, and framework implementation.",
+    "overview": "Cyberxperts provides consultancy in Information Security Strategy, Cyber Security Program Development and Management, and Information Security Management Systems, drawing on frameworks including NIST, ISO 27001, and COBIT.",
+    "problems": [
+      "No formal security strategy or roadmap in place",
+      "Security investment not aligned to actual organisational risk",
+      "Governance structures that have not kept pace with growth",
+      "Need for independent, framework-grounded advice"
+    ],
+    "benefits": [
+      "Strategic guidance grounded in recognised frameworks",
+      "Experience advising regulator, financial services, and public sector clients",
+      "Practical recommendations suited to organisational maturity, not generic best practice",
+      "Support for long-term security program development, not just point-in-time advice"
+    ],
+    "process": [
+      {
+        "title": "Discovery",
+        "description": "We understand your current environment, objectives, and constraints."
+      },
+      {
+        "title": "Strategy development",
+        "description": "A security strategy or program roadmap is developed against your objectives."
+      },
+      {
+        "title": "Implementation guidance",
+        "description": "Ongoing advisory support as the strategy is implemented."
+      },
+      {
+        "title": "Review",
+        "description": "Periodic review to ensure the strategy remains aligned to organisational change."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is this a one-off engagement or ongoing?",
+        "answer": "Both models are available, depending on whether you need a defined strategy engagement or ongoing advisory support."
+      },
+      {
+        "question": "Do you work with organisations that already have an internal security team?",
+        "answer": "Yes. Consulting engagements often support existing internal teams with independent, framework-based guidance."
+      }
+    ]
+  }
+]

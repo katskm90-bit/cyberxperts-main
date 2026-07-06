@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #131316;
+  --bg-tertiary: #1c1c20;
+  --bg-elevated: #232328;
+  --ink-primary: #f5f5f7;
+  --ink-muted: #9a9aa3;
+  --ink-faint: #6b6b74;
+  --accent-navy: #003b8e;
+  --accent-navy-bright: #1d5ac4;
+  --accent-red: #e11d2e;
+  --accent-red-bright: #ff3b4e;
+  --accent-gold: #c8a75b;
+  --bg-light: #f5f5f7;
+  --ink-on-light: #16161a;
+  --ink-on-light-muted: #5a5a64;
+  --border-dark: #2a2a30;
+  --border-light: #e5e7eb;
+  --accent-gray: #9a9aa3;
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-ink-primary: var(--ink-primary);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-accent-navy: var(--accent-navy);
+  --color-accent-navy-bright: var(--accent-navy-bright);
+  --color-accent-red: var(--accent-red);
+  --color-accent-red-bright: var(--accent-red-bright);
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-gray: var(--accent-gray);
+  --color-bg-light: var(--bg-light);
+  --color-ink-on-light: var(--ink-on-light);
+  --color-ink-on-light-muted: var(--ink-on-light-muted);
+  --color-border-dark: var(--border-dark);
+  --color-border-light: var(--border-light);
+  --font-display: "Archivo Black", "Arial Black", "Helvetica Neue", Impact, "Barlow Condensed", sans-serif;
+  --font-body: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* {
+  border-color: var(--border-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--ink-primary);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-navy-bright);
+  outline-offset: 3px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Network background: slow travelling dash + soft node pulse.
+   Deliberately slow (22-34s) and low-contrast — signal, not decoration. */
+.net-line {
+  stroke-dasharray: 6 14;
+  animation: net-travel linear infinite;
+}
+.net-line-1 { animation-duration: 26s; }
+.net-line-2 { animation-duration: 31s; animation-direction: reverse; }
+.net-line-3 { animation-duration: 24s; }
+.net-line-4 { animation-duration: 29s; animation-direction: reverse; }
+.net-line-5 { animation-duration: 33s; }
+.net-line-6 { animation-duration: 27s; animation-direction: reverse; }
+.net-line-7 { animation-duration: 36s; }
+.net-line-8 { animation-duration: 32s; animation-direction: reverse; }
+.net-line-9 { animation-duration: 28s; }
+
+@keyframes net-travel {
+  to { stroke-dashoffset: -200; }
+}
+
+.net-node {
+  animation: net-pulse 5.5s ease-in-out infinite;
+}
+.net-node-accent {
+  animation-name: net-pulse-accent;
+  animation-duration: 6.5s;
+}
+
+@keyframes net-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.9; }
+}
+@keyframes net-pulse-accent {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Gradient utilities - charcoal/black depth + colour glow accents */
+.bg-gradient-charcoal {
+  background: linear-gradient(160deg, #0a0a0c 0%, #1c1c20 100%);
+}
+
+.bg-gradient-navy-glow {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 20%, rgba(29, 90, 196, 0.25), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(225, 29, 46, 0.15), transparent 60%),
+    linear-gradient(160deg, #0a0a0c 0%, #131316 100%);
+}
+
+.bg-gradient-red-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 75% 30%, rgba(225, 29, 46, 0.30), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(29, 90, 196, 0.18), transparent 60%),
+    linear-gradient(160deg, #0a0a0c 0%, #1c1c20 100%);
+}
+
+.bg-gradient-gold-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 20%, rgba(200, 167, 91, 0.20), transparent 60%),
+    linear-gradient(160deg, #0a0a0c 0%, #131316 100%);
+}
+
+/* Photo-scrim variants: same colour tints as the -glow classes above, but
+   with a translucent dark base instead of an opaque one, so a background
+   photo shows through while text stays fully legible. Used only where a
+   photo is layered underneath; the plain -glow classes above are untouched
+   and still used everywhere without a photo. */
+.photo-scrim-navy {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 20%, rgba(29, 90, 196, 0.35), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(225, 29, 46, 0.20), transparent 60%),
+    linear-gradient(160deg, rgba(10, 10, 12, 0.82) 0%, rgba(19, 19, 22, 0.88) 100%);
+}
+.photo-scrim-red {
+  background:
+    radial-gradient(ellipse 70% 60% at 75% 30%, rgba(225, 29, 46, 0.35), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(29, 90, 196, 0.22), transparent 60%),
+    linear-gradient(160deg, rgba(10, 10, 12, 0.82) 0%, rgba(19, 19, 22, 0.88) 100%);
+}
+.photo-scrim-gold {
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 20%, rgba(200, 167, 91, 0.25), transparent 60%),
+    linear-gradient(160deg, rgba(10, 10, 12, 0.82) 0%, rgba(19, 19, 22, 0.88) 100%);
+}
+
+.text-gradient-navy-red {
+  background: linear-gradient(90deg, #1d5ac4, #e11d2e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
