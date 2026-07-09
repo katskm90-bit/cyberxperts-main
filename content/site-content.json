@@ -94,19 +94,19 @@
     "heading": "Minimise the threats.",
     "items": [
       {
-        "value": 50,
+        "value": 350,
         "label": "Projects Completed"
       },
       {
-        "value": 40,
+        "value": 100,
         "label": "Happy Clients"
       },
       {
-        "value": 15,
+        "value": 56,
         "label": "Consultants"
       },
       {
-        "value": 20,
+        "value": 86,
         "label": "Partners"
       }
     ]
